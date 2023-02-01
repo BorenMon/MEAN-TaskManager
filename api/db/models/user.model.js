@@ -163,7 +163,7 @@ const saveSessionToDatabase = (user, refreshToken) => {
 }
 
 const generateRefreshTokenExpiryTime = () => {
-  const daysUntilExpire = "10"
+  const daysUntilExpire = 10
   const secondsUnitlExpire = daysUntilExpire * 24 * 60 * 60
   // const secondsUnitlExpire = 15
   return Date.now() / 1000 + secondsUnitlExpire

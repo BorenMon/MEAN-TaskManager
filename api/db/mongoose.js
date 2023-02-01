@@ -7,7 +7,7 @@ mongoose.set("strictQuery", false);
 mongoose.connect(
   'mongodb+srv://boren:Sbg7zMzFMSZOmOOa@task-manager.zanqn2a.mongodb.net/test',
   // 'mongodb://127.0.0.1:27017/task-manager',
-   { useNewUrlParser: true }
+  { useNewUrlParser: true }
 ).then(() => {
   console.log('Connected to MongoDB')
 }).catch(e => {
